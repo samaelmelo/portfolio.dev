@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+/* RESET  */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+a{display: inline-block;}
+
+:root{font-size: 62.5%; }
+
+html,body{
+  font-family: 'Ubuntu', Arial;
+  width: 100%;
+  height: 100%;
+}
+
+#header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background: #021124;
+  overflow-y: auto;
+  width: 18.7rem;
+  transition: all ease-in-out .5s;
+  padding: 0 .9rem;
+  z-index: 2000;
+}
+
+#header .profile img{
+  margin: .9rem auto;
+  display: block;
+  width: 11rem;
+  height: 11.5rem;
+  border: 8px solid #2c2f3f;
+  border-radius: 50%;
+}
+
+#header .profile h1{
+  font-size: 2rem;
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+  text-align: center;
+  color: #Fff;
+}
+
+#header .profile .social-links{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+#header .profile .social-links a{
+  font-size: 1.6rem;
+  background: #212431;
+  color: #fff;
+  padding: 0.6rem 1rem;
+  border-radius: 100%;
+  transition: .3s;
+  cursor: pointer;
+  
+}
+
+#header .profile .social-links a:hover{
+  background-color: #149ddd;
+}
+
+.nav-menu{
+  padding: 1.5rem;
+}
+
+.nav-menu a,
+.nav-menu a:focus{
+  display: flex;
+  align-items: center;
+  color: #a8a9b4;
+  transition: 0.3s;
+  font-size: .9rem;
+}
+
+.nav-menu a i,
+.nav-menu a:focus i{
+  font-size: 2rem;
+  padding-right: .8rem;
+  color: #6f7180;
+
+}
+
+.nav-menu a:hover,
+.nav-menu .active,
+.nav-menu .active:focus,
+.nav-menu li:hover > a{
+  color: #fff;
+}
+
+.nav-menu a:hover i,
+.nav-menu .active i,
+.nav-menu .active:focus i,
+.nav-menu li:hover > a i{ 
+  color: #149ddd;
+}
+
+#main{
+  margin-left: 18.7rem;
+
+}
+
+section#inicio{
+  background-image:url('imgs/banner.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+
+  width: 100%;
+  height: 100vh;
+}
+
+/* .align-items-end{
+  margin-left: -10rem;
+} */
+
+#inicio h2{font-size: 6rem; }
+
+#subtitle{
+  margin-right: 12rem;
+  font-size: 1.7rem;
+}
+
+.txt-shadow{
+  text-shadow: 4px 4px 10px #000000;
+}
+
+#arraste{ width: 9rem;}
+
+#arraste a {
+  font-size: 1.3rem;
+  color: #fff;
+}
