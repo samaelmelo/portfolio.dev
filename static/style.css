@@ -22,7 +22,6 @@ body {
   font-family: 'Ubuntu', Arial;
   width: 100%;
   height: 100%;
-  overflow: hidden;
 }
 
 
@@ -121,19 +120,16 @@ section#inicio {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  background-position: center;
+  background-position: bottom;
 
   width: 100%;
   height: 100vh;
-
-  animation: move 15s linear backwards;
+ 
   overflow: hidden;
+
+  
 }
 
-/* @keyframes move {
-  from{ transform: scale(1.5);}
-  to{ transform:scale(1);}
-} */
 
 /* .align-items-end{
   margin-left: -10rem;
@@ -141,6 +137,7 @@ section#inicio {
 
 #inicio h2 {
   font-size: 6rem;
+  animation-delay: .2s;
 }
 
 
@@ -148,7 +145,7 @@ section#inicio {
 #subtitle {
   margin-right: 12rem;
   font-size: 1.7rem;
-  animation-delay: .3s;
+  animation-delay: .5s;
 }
 
 .txt-shadow {
@@ -250,6 +247,21 @@ section#inicio {
   background-color: #000050;
   border-radius: 10px;
 }
+
+
+.section-bg{
+  background-color: #eff5ff;
+}
+
+
+
+
+
+
+
+
+
+
 
 @media screen and (max-width: 1024px) {
   #main {
