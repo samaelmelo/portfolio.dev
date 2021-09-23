@@ -320,6 +320,33 @@ section#inicio {
    margin-bottom: -3rem;
 }
 
+/* Animação */
+/* todos os data anime iniciam assim */
+[data-anime]{
+  opacity: 0;
+  transition: 1s;
+}
+/* depois cada um tem sua config */
+[data-anime='down']{
+  transform: translateY(-100%);
+}
+
+[data-anime='up']{
+  transform: translateY(100%);
+}
+
+[data-anime='left']{
+  transform: translateX(-100%);
+}
+[data-anime='right']{
+  transform: translateY(100%)
+}
+/* quando adicionar a classe animate todas as config voltaram ao normal */
+[data-anime].animate{
+  opacity: 1;
+  transform: translate3d(0,0,0);
+  
+}
 
 
 @media screen and (max-width: 1024px) {
@@ -342,4 +369,8 @@ section#inicio {
     margin-right: 0rem;
     font-size: 1.5rem;
   }
+
+
 }
+
+

@@ -17,3 +17,28 @@ navItem.forEach(item => item.addEventListener('click', () => {
     menuMobile.classList.toggle('active')
   }
 }))
+
+
+// animar todos os itens da tela que tiverem o atributo data-anime
+const item = document.querySelectorAll('[data-anime]')
+const animeScroll= () =>{
+// identificar em que posição do topo o elemento está + altura da janela  *  0.85 
+  const windowTop = Math.round(window.scrollY) + window.innerHeight * 0.86
+
+  item.forEach( element => {
+    const alturaDoElementoDoTop = element.offsetTop
+    if(windowTop > alturaDoElementoDoTop){
+      element.classList.add('animate');
+    } else {
+      element.classList.remove('animate')
+    }
+  
+  })
+  
+}
+
+animeScroll()
+
+window.addEventListener('scroll', () => {
+  animeScroll()
+})
