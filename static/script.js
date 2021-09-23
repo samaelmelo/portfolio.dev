@@ -42,3 +42,21 @@ animeScroll()
 window.addEventListener('scroll', () => {
   animeScroll()
 })
+
+
+// ativar o carregamento no botao enviar formilario para
+
+const btnEnviar = document.querySelector('#btn-enviar')
+const btnEnviarLoader = document.querySelector('#btn-enviar-loader')
+
+
+btnEnviar.addEventListener('click', ()=>{
+  btnEnviarLoader.style.display = 'block'
+  btnEnviar.style.display = 'none'
+})
+
+// tirar a mensagem depois de 5 segundos
+
+setTimeout( () => {
+  document.querySelector('#alerta').style.display = 'none'
+},4000)

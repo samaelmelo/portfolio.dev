@@ -349,6 +349,18 @@ section#inicio {
 }
 
 
+#btn-enviar-loader{
+  display: none;
+}
+
+
+#alerta{
+  position: fixed;
+  z-index: 3000;
+  top: 2rem;
+  right: 2rem;
+}
+
 @media screen and (max-width: 1024px) {
   #main {
     margin-left: 0;
