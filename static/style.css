@@ -32,7 +32,7 @@ body {
   bottom: 0;
   background: #021124;
   overflow-y: auto;
-  width: 18.5rem;
+  width: 20rem;
   transition: all ease-in-out 0.5s;
   padding: 0 0.9rem;
   z-index: 2000;
@@ -77,8 +77,50 @@ body {
   background-color: #149ddd;
 }
 
+.padding-inline{
+  padding-inline: 2rem;
+}
+
+ h2{
+  font-size: 2.2rem;
+}
+h3{
+  font-size: 2rem;
+}
+
+h4{
+  font-size: 1.8rem !important;
+}
+
+p{
+  font-size: 1.4rem;
+}
+
+#sobre li{
+  font-size: 1.3rem;
+}
+
+
+#habilidades .row .progress div{
+  font-size: 1.1rem;
+  padding-block: 5px;
+  
+}
+
+#pad-port{
+  padding: 1rem 4rem;
+}
+
+#contato label{
+  font-size: 1.3rem;
+}
+
 .nav-menu {
   padding: 1.5rem;
+}
+
+input, textarea{
+  font-size: 1.4rem !important;
 }
 
 .nav-menu a,
@@ -112,7 +154,7 @@ body {
 }
 
 #main {
-  margin-left: 18.5rem;
+  margin-left: 20rem;
 }
 
 section#inicio {
@@ -146,6 +188,7 @@ section#inicio {
   margin-right: 12rem;
   font-size: 1.7rem;
   animation-delay: .5s;
+  text-shadow: 0px -2px 2px black;
 }
 
 .txt-shadow {
@@ -307,13 +350,21 @@ section#inicio {
 }
 
 .carousel-control-prev{
-  margin-left: -8rem;
-  display: none;
+  margin-left: -9.3rem;
+  /* border: 1px solid green; */
+  /* display: none; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .carousel-control-next{
-  margin-right: -8rem;
-  display: none;
+  margin-right: -3.4rem;
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content:flex-end;
+  align-items: center;
+  /* display: none; */
 }
 
 .carousel-indicators{
@@ -348,9 +399,15 @@ section#inicio {
   
 }
 
+#btn-enviar{
+  line-height: 2rem;
+  font-size: 1.2rem;
+}
 
 #btn-enviar-loader{
   display: none;
+  line-height: 2rem;
+  font-size: 1.2rem;
 }
 
 
@@ -359,14 +416,26 @@ section#inicio {
   z-index: 3000;
   top: 2rem;
   right: 2rem;
+  line-height: 2rem;
+  font-size: 1.2rem;
 }
 
+
+#footer{
+  padding: 1.4rem 1.5rem;
+  color: #a8a9b4;
+  font-size: 1.2rem;
+
+  width: 100%;
+  background-color: #021124;
+  transition: .3s;
+}
 @media screen and (max-width: 1024px) {
   #main {
     margin-left: 0;
   }
   #header {
-    left: -18.5rem;
+    left: -20rem;
   }
 
   .menu-mobile {
@@ -382,7 +451,36 @@ section#inicio {
     font-size: 1.5rem;
   }
 
+  #footer{
+    width: 20rem;
+    padding: 1.4rem 1.5rem;
+    z-index: 3000;
+    
+    position: relative;
+    left: -20rem;
+    bottom: 0;
+    transition: 1s .2s ease;
+  }
+  
+  #footer.wid{
+    position: fixed;
+    bottom: 0;
+    z-index: 3000;
+    
+    left: 0;
+  }
 
 }
 
 
+
+@media screen and (max-width: 600px) {
+.carousel-control-prev{
+  display: none;
+}
+
+.carousel-control-next{
+  display: none;
+  
+} 
+}
