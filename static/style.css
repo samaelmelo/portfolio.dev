@@ -182,7 +182,29 @@ section#inicio {
   font-size: 1.7rem;
   animation-delay: 0.5s;
   text-shadow: 0px -2px 2px black;
+  visibility:hidden;
+  /* opacity: 0; */
 }
+
+#subtitle::after{
+  content: '|';
+  color: orange;
+  margin-left: 0.3rem;
+  opacity: 1;
+
+  animation: flasher 0.7s infinite;
+}
+
+@keyframes flasher {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
 
 .txt-shadow {
   text-shadow: 4px 4px 10px #000000;

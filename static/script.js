@@ -76,3 +76,32 @@ btnEnviar.addEventListener('click', ()=>{
 setTimeout( () => {
   document.querySelector('#alerta').style.display = 'none'
 },4000);
+
+
+
+
+const nameJob = document.querySelector("span.name-job")
+
+const typeWriter = (element) => {
+  const textArray = element.innerHTML.split('')
+
+  element.innerHTML = ''
+
+  textArray.forEach((letter, index) => {
+    setTimeout(() => {
+      element.innerHTML += letter
+    }, 100 * index)
+    
+  })
+}
+
+const nameDev = document.querySelector("h2.name-dev")
+
+
+// typeWriter(nameJob)
+
+setTimeout( () => {
+  nameJob.style.visibility='visible'
+  nameJob.style.opacity = '1'
+  typeWriter(nameJob)
+}, 1000)
