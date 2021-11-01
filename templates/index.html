@@ -8,6 +8,8 @@
   <link rel="stylesheet" href="../static/bootstrap/css/bootstrap.css">
   <!-- CSS -->
   <link rel="stylesheet" href="../static/style.css">
+  <!-- CSS SWIPER -->
+  <link rel="stylesheet" href="../static/swiper-style.css">
   <!-- FAVICON -->
   <link rel="shortcut icon" href="../static/imgs/icon/favicon.ico" type="image/x-icon">
   <!-- BOOTSTRAP -->
@@ -16,10 +18,16 @@
   <link
     rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
+  <!-- SWIPER -->
+  <link
+        rel="stylesheet"
+        href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+  />
+
   <title>Samael.dev</title>
 </head>
 <body>
-    <div class="menu-mobile">
+    <div class="menu-mobile">   
         <div class="box">
             <div></div>
             <div></div>
@@ -59,7 +67,7 @@
                     <a class="nav-link " href="#curriculo"><i class="bi bi-file-earmark"></i> Currículo</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link " href="#portfolio"><i class="bi bi-collection"></i> Portfólio</a>
+                    <a class="nav-link " href="#portfolio"><i class="bi bi-collection"></i> Portfolio</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link " href="#contato"><i class="bi bi-envelope"></i> Contatos</a>
@@ -320,139 +328,226 @@
         </section>
 
         <section id='portfolio' class='section-bg mt-5' style="padding-block: 2rem; ">
-                <div class="container pb-5 pt-5" id='pad-port' data-anime="left">
-                    <h4 class='pb-4' >Portfolio</h4>
-
-                    <div id="carouselPortfolio" class="carousel carousel-dark slide" data-bs-ride="carousel">
-                        <div class="carousel-indicators">
-                          <button type="button" data-bs-target="#carouselPortfolio" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1" id='btn-carousel'></button>
-                          <button type="button" data-bs-target="#carouselPortfolio" data-bs-slide-to="1" aria-label="Slide 2" id='btn1-carousel'></button>
+            
+                <div class="swiper">
+                  <h4 style="padding-left: 2rem">Portfolio</h4>
+                    <div class="swiper-wrapper">
                         
-                    </div>
-                        <div class="carousel-inner" >
-                          <div class="carousel-item active" data-bs-interval="10000">
-                           
-                            <div class="row row-cols-1 row-cols-md-3 g-4">
-                                <div class="col">
-                                  <div class="card" >
-                                    <img src="../static/imgs/github-search.png" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                      <h5 class="card-title">GitHub-search developer</h5>
-                                      <p class="card-text">Projeto front-end criado com HTML, CSS, JavaScript, NodeJs, Express e EJS  ainda em fazes de teste.</p>
-                                    </div>
-                                    <div class='d-flex justify-content-center'>
-                                        <a href="https://github.com/samaelmelo/github-user-search" target="_blank"
-                                        class="btn btn-outline-dark me-3"><i class='bi bi-github'></i></a>
-                                            <a href="https://samaelmelo.github.io/github-user-search/" target="_blank"
-                                            class="btn btn-outline-primary"><i class='bi bi-link-45deg'></i></a>
-                                    </div>
-                                  </div>
-
+                        <div class="swiper-slide">
+                            <div class="card-carroussel" >
+                                <img src="../static/imgs/github-search.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">GitHub-search developer</h5>
+                                  <p class="card-text">Este projeto faz requisições a API do Github e retorna seus usuarios. Ele foi desenvolvido com as tecnologias abaixo:</p>
+                                  <ul>
+                                      <li>HTML 5</li>
+                                      <li>CSS 3</li>
+                                      <li>Javascript</li>
+                                      <li>Fetch API</li>
+                                  </ul>
                                 </div>
-                                <div class="col">
-                                  <div class="card" >
-                                    <img src="../static/imgs/task-list.png" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                      <h5 class="card-title">Task List</h5>
-                                      <p class="card-text">Projeto front-end criado com o framework React JS desenvolvido no curso da Rockeseat.</p>
-                                    </div>
-                                    <div class='d-flex justify-content-center'>
-                                        <a href="https://github.com/samaelmelo/task-list" target="_blank"
-                                        class="btn btn-outline-dark me-3"><i class='bi bi-github'></i></a>
+                                <div class='d-flex justify-content-center'>
+                                    <a href="https://github.com/samaelmelo/github-user-search" target="_blank"
+                                    class="btn btn-outline-dark me-3"><i class='bi bi-github'></i></a>
+                                    <a href="https://samaelmelo.github.io/github-user-search/" target="_blank"
+                                    class="btn btn-outline-primary"><i class='bi bi-link-45deg'></i></a>
                                 </div>
-                                  </div>
-                                </div>
-                                <div class="col">
-                                  <div class="card" >
-                                    <img src="../static/imgs/Projeto Netflix.png" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                      <h5 class="card-title">Clone Netflix </h5>
-                                      <p class="card-text">Projeto responsivo desenvolvido com o React Js. Foi utilizado requisições de API, CSS, material UI.</p>
-                                    </div>
-                                    <div class='d-flex justify-content-center'>
-                                        <a href="https://github.com/samaelmelo/clone-netflix" target="_blank"
-                                        class="btn btn-outline-dark me-3"><i class='bi bi-github'></i></a>
-                                        <a href="https://samaelmelo.github.io/clone-netflix/" target="_blank"
-                                        class="btn btn-outline-primary"><i class='bi bi-link-45deg'></i></a>
-                                    </div>
-                                  </div>
-                                </div>
-                                <!-- <div class="col">
-                                  <div class="card" >
-                                    <img src="../static/imgs/job-calcs.png" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                      <h5 class="card-title">Job calcs</h5>
-                                      <p class="card-text">Projeto fullstack criado com HTML, CSS, JavaScript, Nodejs, Express, EJS, SQLite.</p>
-                                    </div>
-                                    <div class='d-flex justify-content-center'>
-                                        <a href="https://github.com/samaelmelo/job-calcs" target="_blank"
-                                        class="btn btn-outline-dark me-3"><i class='bi bi-github'></i></a>
-                                    </div>
-                                  </div>
-                                </div> -->
-                              </div>
-
-                          </div>
-                          <div class="carousel-item" data-bs-interval="2000">
-                            <div class="carousel-item active" data-bs-interval="10000">
-                           
-                                <div class="row row-cols-1 row-cols-md-3 g-4">
-                                    <div class="col">
-                                      <div class="card" >
-                                        <img src="../static/imgs/pokedex.png" class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                          <h5 class="card-title">Pokedex</h5>
-                                          <p class="card-text">Projeto front-end criado com HTML, CSS, JavaScript.</p>
-                                        </div>
-                                        <div class='d-flex justify-content-center'>
-                                                <a href="https://samaelmelo.github.io/pokedex/" target="_blank"
-                                                class="btn btn-outline-primary"><i class='bi bi-link-45deg'></i></a>
-                                        </div>
-                                      </div>
-                                    </div>
-                                    <div class="col">
-                                      <div class="card" >
-                                        <img src="../static/imgs/sistema vaquinha-online.png" class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                          <h5 class="card-title">CrowdFund</h5>
-                                          <p class="card-text">Projeto front-end criado com HTML CSS e Javascript.</p>
-                                        </div>
-                                        <div class='d-flex justify-content-center'>
-                                            <a href="https://samaelmelo.github.io/CrowdFund-/" target="_blank"
-                                            class="btn btn-outline-primary"><i class='bi bi-link-45deg'></i></a>
-                                    </div>
-                                      </div>
-                                    </div>
-                                    <div class="col">
-                                      <div class="card" >
-                                        <img src="../static/imgs/dev-finance.png" class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                          <h5 class="card-title">Dev-Finance</h5>
-                                          <p class="card-text">Projeto front-end criado com HTML, CSS, JavaScript.</p>
-                                        </div>
-                                        <div class='d-flex justify-content-center'>
-                                            <a href="https://samaelmelo.github.io/Controle-financeiro/" target="_blank"
-                                            class="btn btn-outline-primary"><i class='bi bi-link-45deg'></i></a>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-    
-                              </div>
-                          </div>
-                         
-                          
+                            </div>
                         </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselPortfolio" data-bs-slide="prev">
-                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselPortfolio" data-bs-slide="next">
-                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Next</span>
-                        </button>
-                      </div>
+                        <div class="swiper-slide">
+                            <div class="card-carroussel" >
+                                <img src="../static/imgs/Projeto Netflix.png" class="card-img-top" alt="Netflix clone">
+                                <div class="card-body">
+                                  <h5 class="card-title">Clone Netflix </h5>
+                                  <p class="card-text">Este é um projeto clone da plataforma Netflix . Foi realizada requisições a API TheMovieDb para obter os dados dos filmes e também este projeto foi desenvolvido em sua forma mobile. As tecnologias utilizadas foram:</p>
+                                  <ul>
+                                      <li>ReactJs</li>
+                                      <li>CSS 3</li>
+                                      <li>Material UI</li>
+                                      <li>API </li>
+                                  </ul>
+                                </div>
+                                <div class='d-flex justify-content-center'>
+                                    <a href="https://github.com/samaelmelo/clone-netflix" target="_blank"
+                                    class="btn btn-outline-dark me-3"><i class='bi bi-github'></i></a>
+                                    <a href="https://samaelmelo.github.io/clone-netflix/" target="_blank"
+                                    class="btn btn-outline-primary"><i class='bi bi-link-45deg'></i></a>
+                                </div>
+                              </div>
+                        </div>    
+                        <div class="swiper-slide">
+                            <div class="card-carroussel" >
+                                <img src="../static/imgs/app-todo.png" class="card-img-top" alt="Aplicação To do">
+                                <div class="card-body">
+                                  <h5 class="card-title">To do List</h5>
+                                  <p class="card-text">To.do é uma aplicação de anotação de tarefas desenvolvido com as tecnologias abaixo: </p>
+                                  <ul>
+                                      <li>ReactJs</li>
+                                      <li>Typescript</li>
+                                      <li>Babel</li>
+                                      <li>Webpack</li>
+                                      <li>Jest</li>
+                                  </ul>
+                                </div>
+                                <div class='d-flex justify-content-center'>
+                                    <a href="https://github.com/samaelmelo/Rocketseat-Ignite-to-do" target="_blank"
+                                    class="btn btn-outline-dark me-3"><i class='bi bi-github'></i></a>
+                                </div>
+                              </div>
+                        </div>    
+                        <div class="swiper-slide">
+                            <div class="card-carroussel" >
+                                <img src="../static/imgs/app-dtmoney.png" class="card-img-top" alt="Aplicação dtmoney">
+                                <div class="card-body">
+                                  <h5 class="card-title">Dtmoney</h5>
+                                  <p class="card-text">Este projeto é um gerenciador financeiro desenvolvido com as tecnologias abaixo: </p>
+                                  <ul>
+                                      <li>ReactJs</li>
+                                      <li>Typescript</li>
+                                      <li>Babel</li>
+                                      <li>Webpack</li>
+                                      <li>Jest</li>
+                                      <li>Styled Components</li>
+                                      <li>MirageJs</li>
+                                      <li>Axios</li>
+                                      <li>Polished</li>
+                                  </ul>
+                                </div>
+                                <div class='d-flex justify-content-center'>
+                                    <a href="https://github.com/samaelmelo/ignite-dtmoney" target="_blank"
+                                    class="btn btn-outline-dark me-3"><i class='bi bi-github'></i></a>
+                                </div>
+                            </div>
+                        </div>    
+                        <div class="swiper-slide">
+                            <div class="card-carroussel" >
+                                <img src="../static/imgs/app-RocketShoesApp.png" class="card-img-top" alt="Aplicação RocketShoes">
+                                <div class="card-body">
+                                  <h5 class="card-title">Rocketshoes</h5>
+                                  <p class="card-text">RocketShoes é uma aplicação web que gerencia compras vituais e foi desenvolvida com as tecnologias abaixo: </p>
+                                  <ul>
+                                      <li>ReactJs</li>
+                                      <li>Typescript</li>
+                                      <li>React-toastfy</li>
+                                      <li>React-icons</li>
+                                      <li>React-Router</li>
+                                      <li>Jest</li>
+                                      <li>Styled Components</li>
+                                      <li>JSON Server</li>
+                                      <li>Axios</li>
+                                      <li>Polished</li>
+                                      <li>Polished</li>
+                                  </ul>
+                                </div>
+                                <div class='d-flex justify-content-center'>
+                                    <a href="https://github.com/samaelmelo/rocketseat-ignite-rocketshoes" target="_blank"
+                                    class="btn btn-outline-dark me-3"><i class='bi bi-github'></i></a>
+                                </div>
+                            </div>
+                        </div>    
+                        <div class="swiper-slide">
+                            <div class="card-carroussel" >
+                                <img src="../static/imgs/app-watchme-project.png" class="card-img-top" alt="Aplicação Watchme">
+                                <div class="card-body">
+                                  <h5 class="card-title">Watchme</h5>
+                                  <p class="card-text">WatchMe é uma aplicação que lista seus filmes favoritos e foi desenvolvida com as tecnologias abaixo: </p>
+                                  <ul>
+                                      <li>ReactJs</li>
+                                      <li>Typescript</li>
+                                      <li>Babel</li>
+                                      <li>Webpack</li>
+                                      <li>JSON Server</li>
+                                  </ul>
+                                </div>
+                                <div class='d-flex justify-content-center'>
+                                    <a href="https://github.com/samaelmelo/Rocketseat-ignite-watchme" target="_blank"
+                                    class="btn btn-outline-dark me-3"><i class='bi bi-github'></i></a>
+                                </div>
+                            </div>
+                        </div>    
+                        <div class="swiper-slide">
+                            <div class="card-carroussel" >
+                                <img src="../static/imgs/App-gorestaurant.png" class="card-img-top" alt="GoRestaurant">
+                                <div class="card-body">
+                                  <h5 class="card-title">GoRestaurant</h5>
+                                  <p class="card-text">
+                                    Go Restaurant é um web service que administra seus pratos executivos e foi desenvolvido com as tecnologias abaixo: </p>
+                                  <ul>
+                                      <li>ReactJs</li>
+                                      <li>Typescript</li>
+                                      <li>Styled Components</li>
+                                      <li>Axios</li>
+                                      <li>JSON Server</li>
+                                      <li>React Icons</li>
+                                      <li>React Router</li>
+                                      <li>React Modal</li>
+                                      <li>Uniform</li>
+                                      <li>Yup</li>
+                                  </ul>
+
+                                </div>
+                                <div class='d-flex justify-content-center'>
+                                    <a href="https://github.com/samaelmelo/rocketseat-ignite-goRestaurant-refactoring" target="_blank"
+                                    class="btn btn-outline-dark me-3"><i class='bi bi-github'></i></a>
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="swiper-slide">
+                            <div class="card-carroussel" >
+                                <img src="../static/imgs/app-1.png" class="card-img-top" alt="JobCalcs">
+                                <div class="card-body">
+                                  <h5 class="card-title">Ecommerce one page</h5>
+                                  <p class="card-text">
+                                    E-commerce é um página de produto de comércio. Ele foi desenvolvido com as tecnologias abaixo: </p>
+                                  <ul>
+                                      <li>ReactJs</li>
+                                      <li>Context API</li>
+                                      <li>React-modal</li>
+                                      <li>Styled-components</li>
+                                  </ul>
+
+                                </div>
+                                <div class='d-flex justify-content-center'>
+                                    <a href="https://github.com/samaelmelo/e-commerce-page-main" target="_blank"
+                                    class="btn btn-outline-dark me-3"><i class='bi bi-github'></i></a>
+                                    <a href="https://ecommerce-one-page.netlify.app/" target="_blank"
+                                    class="btn btn-outline-primary"><i class='bi bi-link-45deg'></i></a>
+                                </div>
+                            </div>
+                        </div>  
+                        <div class="swiper-slide">
+                            <div class="card-carroussel" >
+                                <img src="../static/imgs/job-calcs.png" class="card-img-top" alt="JobCalcs">
+                                <div class="card-body">
+                                  <h5 class="card-title">Job Calcs</h5>
+                                  <p class="card-text">
+                                    Job Calcs é uma aplicação que calcula o orçamento de um web site ou web app de acordo com a quantidade de dias estabelecidos e o valor da minha hora de trabalho. Ele foi desenvolvido com as tecnologias abaixo: </p>
+                                  <ul>
+                                      <li>HTML 5</li>
+                                      <li>CSS 3</li>
+                                      <li>Javascript</li>
+                                      <li>NodeJs</li>
+                                      <li>Express</li>
+                                      <li>EJS</li>
+                                      <li>SQLITE</li>
+                                  </ul>
+
+                                </div>
+                                <div class='d-flex justify-content-center'>
+                                    <a href="https://github.com/samaelmelo/job-calcs" target="_blank"
+                                    class="btn btn-outline-dark me-3"><i class='bi bi-github'></i></a>
+                                </div>
+                            </div>
+                        </div>  
+                    </div>
+
+                     <div class="swiper-pagination"></div>
+
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
                 </div>
+                
+      
         </section>
 
         <section id="contato" class='pt-5 pb-5'>
@@ -530,8 +625,26 @@
                     </div>
             </div>
     </footer>
+    
+    <script src="../static/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../static/script.js"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper('.swiper', {
+      pagination: {
+        el: '.swiper-pagination',
+        dynamicBullets: true,
 
-  <script src="../static/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="../static/script.js"></script>
+      } ,
+        navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      }
+    })
+
+    const swiperElement = document.querySelector('.swiper').swiper
+
+    swiperElement.slideNext()
+  </script>
 </body>
 </html>

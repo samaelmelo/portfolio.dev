@@ -28,7 +28,6 @@ class Contato:
       self.mensagem = mensagem
 
 
-
 @app.route('/')
 def index():
     return render_template('index.html')
@@ -59,4 +58,4 @@ def send():
   return redirect('/')  
 
 if __name__ == '__main__':
-  app.run(debug=True)
+  app.run(debug=True) 

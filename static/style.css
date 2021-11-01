@@ -460,6 +460,9 @@ section#inicio {
 }
 
 @media screen and (max-width: 600px) {
+
+
+
   .carousel-control-prev {
     display: none;
   }
