@@ -105,3 +105,50 @@ setTimeout( () => {
   nameJob.style.opacity = '1'
   typeWriter(nameJob)
 }, 1000)
+
+
+
+const imgCarousel = document.querySelectorAll('.card-carroussel img')
+const modalWrapper = document.querySelector('.modalWrapper')
+
+imgCarousel.forEach( item => {
+  item.addEventListener('click', (ev) => {
+    const imgModal = document.querySelector('.modalContent img ')
+    
+    if(window.innerWidth > 600){
+      modalWrapper.classList.add('active')
+      imgModal.setAttribute('src', ev.target.attributes.src.nodeValue)
+    } else {
+      return
+    }
+
+  })
+})
+
+const iconClose = document.querySelector('.closeIcon')
+
+const closeModalItems = Array.from([iconClose,modalWrapper])
+
+
+closeModalItems.forEach(item => item.addEventListener('click', ev => {
+  const modal =  ev.target.className === 'modalWrapper active' 
+
+  let classCloseIcon = `"${ev.target.className}"`
+
+  let arrayClassCloseIcon = classCloseIcon.split(' ')
+
+  let closeIcon = arrayClassCloseIcon.find(el => el === 'closeIcon"')
+
+  if(modal || closeIcon){
+    closeModalWrapper()
+  }
+
+})) 
+
+
+const closeModalWrapper = () => {
+  modalWrapper.classList.remove('active')
+}
+
+
+

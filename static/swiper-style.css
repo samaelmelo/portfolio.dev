@@ -74,6 +74,10 @@
 
 
 
+.card-carroussel img {
+  cursor: pointer;
+}
+
 @media screen and (max-width: 600px) {
 
   .swiper{
@@ -87,5 +91,6 @@
   .card-carroussel img{
     margin: 0 auto;
     width: 100%;
+  
   }
 }

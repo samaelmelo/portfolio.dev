@@ -10,6 +10,8 @@
   <link rel="stylesheet" href="../static/style.css">
   <!-- CSS SWIPER -->
   <link rel="stylesheet" href="../static/swiper-style.css">
+  <!-- CSS MODAL -->
+  <link rel="stylesheet" href="../static/modal.css">
   <!-- FAVICON -->
   <link rel="shortcut icon" href="../static/imgs/icon/favicon.ico" type="image/x-icon">
   <!-- BOOTSTRAP -->
@@ -615,6 +617,14 @@
                         </div>
                 </div>
         </section>
+
+        <div class="modalWrapper">
+            <div class="modalContent">
+                <i class="bi bi-x-lg closeIcon"></i>
+                    <img src="" alt="">
+            </div>
+        </div>
+
         
         {% with messages = get_flashed_messages() %}
         {% if messages %}
