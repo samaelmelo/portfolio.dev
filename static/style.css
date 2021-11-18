@@ -212,6 +212,8 @@ section#inicio {
 
 #arraste {
   position: relative;
+  z-index: 3000;
+
   width: 9rem;
 }
 
@@ -220,7 +222,6 @@ section#inicio {
   position: absolute;
   font-size: 1.3rem;
   color: #fff;
-  z-index: 4000;
 }
 /* icone do menu */
 .menu-mobile {
