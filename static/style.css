@@ -249,7 +249,7 @@ section#inicio {
   background-color: #fff;
   position: absolute;
   box-shadow: 1px 2px 1px black;
-  top: 1px;
+  top: 2px;
   left: 0px;
 }
 .menu-mobile .box div:nth-child(2)::after {
@@ -276,7 +276,7 @@ section#inicio {
 }
 
 .menu-mobile.active .box div:nth-child(1)::after {
-  transform: rotate(44deg) translateX(0px) translateY(1px);
+  transform: rotate(47deg) translateX(0px) translateY(1px);
 }
 .menu-mobile.active .box div:nth-child(2)::after {
   transform: translateX(-10px);
@@ -493,4 +493,31 @@ section#inicio {
   .carousel-control-next {
     display: none;
   }
+}
+
+
+.iframe-contact {
+  height: 400px;
+}
+
+.whatsapp-float {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  width: 56px;
+  height: 56px;
+  background-color: #25D366;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
 }

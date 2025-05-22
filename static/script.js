@@ -140,3 +140,8 @@ closeModalItems.forEach((item) =>
 const closeModalWrapper = () => {
   modalWrapper.classList.remove('active');
 };
+
+
+const yearExperience = document.getElementById("yearExperience")
+
+yearExperience.textContent = new Date().getFullYear() - 2020
