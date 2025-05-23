@@ -1,7 +1,7 @@
-.modalWrapper{
+.modalWrapper {
   width: 100%;
   height: 100vh;
-  
+
   position: fixed;
   top: 0;
   left: 0;
@@ -10,70 +10,64 @@
 
   z-index: 3000;
 
-  background-color: rgba(0, 0, 0, .67);
+  background-color: rgba(0, 0, 0, 0.67);
 
   display: none;
   justify-content: center;
   align-items: center;
 }
 
-
-.modalWrapper .modalContent{
-  width: min(90%, 700px);
-  height: min(70%,85%);
+.modalWrapper .modalContent {
+  width: min(90%, 75%);
+  height: min(100%, 90%);
   animation: fade 1s ease forwards;
 }
 
-
 @keyframes fade {
-  0%{
+  0% {
     opacity: 0;
-    transform: scale(.6);
+    transform: scale(0.6);
   }
-  100%{
+  100% {
     opacity: 1;
     transform: scale(1);
   }
 }
 
-.modalWrapper .modalContent img{
+.modalWrapper .modalContent img {
   width: 100%;
   height: 100%;
 }
 
-.modalWrapper .modalContent .closeIcon{
+.modalWrapper .modalContent .closeIcon {
   position: absolute;
-  right: -2.4rem;
-  top: -2.9rem;
+  right: 1rem;
+  top: 0.9rem;
   color: white;
   font-size: 2.5rem;
   opacity: 0;
   cursor: pointer;
 
-  animation: appear 1s .3s ease forwards;
-
+  animation: appear 1s 0.3s ease forwards;
 }
 
-
 @keyframes appear {
-  from{
+  from {
     transform: translateY(-10rem);
     opacity: 0;
   }
-  to{
+  to {
     transform: translateY(0);
     opacity: 1;
   }
 }
 
-.modalWrapper.active{
+.modalWrapper.active {
   display: flex;
 }
 
-@media screen and (max-width: 600px){
-  .modalWrapper.active{
+@media screen and (max-width: 600px) {
+  .modalWrapper.active {
     display: none;
   }
 }
-
-

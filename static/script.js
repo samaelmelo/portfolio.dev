@@ -106,7 +106,7 @@ const modalWrapper = document.querySelector('.modalWrapper');
 
 imgCarousel.forEach((item) => {
   item.addEventListener('click', (ev) => {
-    const imgModal = document.querySelector('.modalContent img ');
+    const imgModal = document.querySelector('.modalContent img');
 
     if (window.innerWidth > 600) {
       modalWrapper.classList.add('active');

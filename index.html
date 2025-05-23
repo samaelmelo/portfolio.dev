@@ -12,7 +12,7 @@
     <!-- CSS SWIPER -->
     <link rel="stylesheet" href="static/swiper-style.css">
     <!-- CSS MODAL -->
-    <!-- <link rel="stylesheet" href="static/modal.css"> -->
+    <link rel="stylesheet" href="static/modal.css">
     <!-- FAVICON -->
     <link rel="shortcut icon" href="static/imgs/icon/favicon.ico" type="image/x-icon">
     <!-- BOOTSTRAP -->
@@ -652,8 +652,63 @@
         <section id='portfolio' class='section-bg mt-5' style="padding-block: 2rem; ">
 
             <div class="swiper" data-anime="left">
-                <h4 style="padding-left: 2rem">Portfolio</h4>
+                <h4 style="padding-left: 2rem; align-self: start">Portfolio</h4>
                 <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <div class="card-carroussel">
+                            <img src="static/imgs/Screenshot 2025-05-23 at 09.50.58.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Ignite Gym</h5>
+                                <p class="card-text">
+                                    Aplicativo mobile desenvolvido em React Native durante o curso Ignite da Rocketseat, com foco em consolidar os conceitos de programação orientada a componentes, navegação, consumo de API e boas práticas com TypeScript.
+                                </p>
+                                <ul>
+                                    <li>React Native</li>
+                                    <li>Expo</li>
+                                    <li>Typescript</li>
+                                    <li>React Navigation</li>
+                                    <li>Axios</li>
+                                    <li>AsyncStorage</li>
+                                    <li>React Hook Form</li>
+                                    <li>Expo image picker</li>
+                                    <li>Gluestack UI</li>
+                                </ul>
+                            </div>
+                            <div class='d-flex justify-content-center' >
+                                <a href="https://github.com/samaelmelo/app-ignitegym" target="_blank"
+                                    class="btn btn-outline-dark me-3"><i class='bi bi-github'></i></a>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="card-carroussel">
+                            <img src="static/imgs/rastreadorIp.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Rastreador de Endereços IP (IP Address Tracker)</h5>
+                                <p class="card-text">
+                                    Este projeto é uma aplicação web desenvolvida em React com TypeScript que permite aos utilizadores rastrear informações de endereços IP ou domínios, exibindo a sua localização num mapa interativo.
+                                </p>
+                                <ul>
+                                    <li>React </li>
+                                    <li>Typescript</li>
+                                    <li>Vite</li>
+                                    <li>IPify API</li>
+                                    <li>LeafletJS</li>
+                                    <li>React-Leaflet</li>
+                                    <li>Axios</li>
+                                    <li>CSS3</li>
+                                </ul>
+                            </div>
+                            <div class='d-flex justify-content-center' >
+                                <a href="https://github.com/samaelmelo/rastreador-de-endereco-ip" target="_blank"
+                                    class="btn btn-outline-dark me-3"><i class='bi bi-github'></i></a>
+                                
+                            </div>
+                        </div>
+                    </div>
 
                     <div class="swiper-slide">
                         <div class="card-carroussel">
@@ -677,6 +732,7 @@
                             </div>
                         </div>
                     </div>
+
                     <div class="swiper-slide">
                         <div class="card-carroussel">
                             <img src="static/imgs/Projeto Netflix.png" class="card-img-top" alt="Netflix clone">
@@ -700,6 +756,7 @@
                             </div>
                         </div>
                     </div>
+
                     <div class="swiper-slide">
                         <div class="card-carroussel">
                             <img src="static/imgs/app-todo.png" class="card-img-top" alt="Aplicação To do">
@@ -721,7 +778,8 @@
                             </div>
                         </div>
                     </div>
-                    <!-- <div class="swiper-slide">
+
+                    <div class="swiper-slide">
                             <div class="card-carroussel" >
                                 <img src="static/imgs/app-dtmoney.png" class="card-img-top" alt="Aplicação dtmoney">
                                 <div class="card-body">
@@ -744,7 +802,8 @@
                                     class="btn btn-outline-dark me-3"><i class='bi bi-github'></i></a>
                                 </div>
                             </div>
-                        </div>     -->
+                    </div>    
+                    
                     <div class="swiper-slide">
                         <div class="card-carroussel">
                             <img src="static/imgs/app-RocketShoesApp.png" class="card-img-top"
@@ -773,6 +832,7 @@
                             </div>
                         </div>
                     </div>
+                    
                     <div class="swiper-slide">
                         <div class="card-carroussel">
                             <img src="static/imgs/app-watchme-project.png" class="card-img-top" alt="Aplicação Watchme">
@@ -794,6 +854,7 @@
                             </div>
                         </div>
                     </div>
+                    
                     <div class="swiper-slide">
                         <div class="card-carroussel">
                             <img src="static/imgs/App-gorestaurant.png" class="card-img-top" alt="GoRestaurant">
@@ -822,6 +883,7 @@
                             </div>
                         </div>
                     </div>
+                    
                     <div class="swiper-slide">
                         <div class="card-carroussel">
                             <img src="static/imgs/app-1.png" class="card-img-top" alt="JobCalcs">
@@ -846,6 +908,7 @@
                             </div>
                         </div>
                     </div>
+                    
                     <div class="swiper-slide">
                         <div class="card-carroussel">
                             <img src="static/imgs/job-calcs.png" class="card-img-top" alt="JobCalcs">
@@ -943,13 +1006,13 @@
                 </div>
         </section>
 
+
         <div class="modalWrapper">
             <div class="modalContent">
                 <i class="bi bi-x-lg closeIcon"></i>
-                    <img src="" alt="">
+                <img src="" alt="">
             </div>
         </div>
-
 
     </main>
 
